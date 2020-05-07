@@ -1,5 +1,5 @@
 import pandas as pd
-df = pd.read_csv('/datasets/music_project.csv')
+df = pd.read_csv('/downloads/music_project.csv')
 df.set_axis(['user_id', 'track_name', 'artist_name', 'genre_name', 'city', 'time', 'weekday'], axis = 'columns', inplace = True)
 
 df['track_name'] = df['track_name'].fillna('unknown')
